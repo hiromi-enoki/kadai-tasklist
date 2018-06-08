@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', 'TasklistsController@index') ;
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::resource('tasklists', 'TasklistsController');
+
+
+/*Route::get('/', 'TasklistsController@index') ;
+
+Route::resource('tasklists', 'TasklistsController');*/
