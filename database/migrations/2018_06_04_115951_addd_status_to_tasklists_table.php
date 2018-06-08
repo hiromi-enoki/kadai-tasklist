@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddStatusToTasklistsTable extends Migration
+class AdddStatusToTasklistsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -26,7 +26,8 @@ class AddStatusToTasklistsTable extends Migration
     public function down()
     {
         Schema::table('tasklists', function (Blueprint $table) {
-            $table->dropColumn('status',10);
+            //$table->dropColumn('status',10);
+            $table->dropColumn('status');
         });
     }
 }
